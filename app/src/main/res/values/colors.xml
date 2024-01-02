@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#061939</color>
+    <color name="colorPrimaryDark">#061939</color>
+    <color name="main_color">#061939</color>
+    <color name="primary_dark">#061939</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <!--    <color name="grey_1000">#061939</color>-->
+    <color name="red_A700">#D50000</color>
+    <color name="black">#000000</color>
+    <color name="saffron">#F9CA35</color>
+    <color name="main">#E8B006</color>
+    <!-- Queue -->
+
+    <color name="bot_nav_clr">#121212</color>
+    <color name="white">#FFFFFF</color>
+    <color name="fragment_featured_overlay_start">#0026262d</color>
+
+    <!-- Expanded Controls -->
+    <color name="orange2">#fff9930d</color>
+
+    <color name="gray_dark">#727272</color>
+    <color name="light_gray">#F1F1F1</color>
+
+    <color name="grey_11">#e6e6e6</color>
+    <color name="grey_60">#666666</color>
+
+    <color name="bg_item_normal_state">#fff0f0f0</color>
+    <color name="bg_item_normal_pressed_state">#ffe0e0e0</color>
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_1sdp">
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginEnd="5dp"
+        android:clipToPadding="false"
+        app:layout_constrainedWidth="true">
+
+        <ImageView
+            android:id="@+id/itemMovieImage"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tara" />
+
+        <!-- The support CardView adds padding for compat shadows on pre-v21, adjust accordingly. -->
+        <!--        <FrameLayout-->
+        <!--            android:id="@+id/cardView"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            tools:ignore="MissingConstraints">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/item_recommended_shadow">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="223dp"-->
+        <!--                android:background="@drawable/item_recommended_shadow"-->
+        <!--                android:contentDescription="@string/image"-->
+        <!--                android:scaleType="centerInside" />-->
+
+
+        <TextView
+            android:id="@+id/txt_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemMovieImage"
+            android:layout_marginStart="0.7dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_label"
+            android:gravity="bottom"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="SmallSp"
+            tools:text="" />
+
+
+        <!--        </FrameLayout>-->
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemMovieImage"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/vaud_light"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_20"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            tools:ignore="SmallSp"
+            tools:text="Movie Title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title"
+
+            android:orientation="horizontal">
+
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_gravity="start"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:numStars="5"
+                android:rating="4.0"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
+
+            <TextView
+                android:id="@+id/view_movie_rating"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_title"
+                android:layout_toEndOf="@+id/rating_bar"
+                android:background="@drawable/view_bg"
+                android:fontFamily="@font/vaud_light"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/movie_rating"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constrainedWidth="true"
+                tools:ignore="SmallSp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

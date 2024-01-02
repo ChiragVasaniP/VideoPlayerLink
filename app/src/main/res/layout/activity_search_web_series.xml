@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SearchWebSeriesActivity">
+
+    <include
+        android:id="@+id/icl_no_network_found"
+        layout="@layout/include_wifi_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_search_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/corner_shape"
+                android:backgroundTint="#063970"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawablePadding="@dimen/_30sdp"
+                android:fontFamily="@font/opensans_bold"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Search Result Show Here"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_search_movie_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:listitem="@layout/item_movie_poster" />
+
+    </LinearLayout>
+
+</LinearLayout>

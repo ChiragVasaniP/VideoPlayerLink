@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "429085663327",
+    "project_id": "mb-player-87220",
+    "storage_bucket": "mb-player-87220.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429085663327:android:06f2a7e5c1cb2e76db3bea",
+        "android_client_info": {
+          "package_name": "com.sitaramapps.myuriapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429085663327-4887ps4mmn0revl82hh3aifok40su0vk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrqPW9FXMSOIt-MiklNEriie---smZ6Xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429085663327-4887ps4mmn0revl82hh3aifok40su0vk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

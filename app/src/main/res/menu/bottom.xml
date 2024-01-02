@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_trending"
+        android:icon="@drawable/ic_trending"
+        android:iconTint="@color/white"
+        android:title="@string/str_trending" />
+
+    <item
+        android:id="@+id/navigation_hollywood"
+        android:icon="@drawable/ic_hollywood"
+        android:iconTint="@color/white"
+        android:menuCategory="secondary"
+        android:title="@string/str_hollywood" />
+
+
+    <item
+        android:id="@+id/navigation_bollywood"
+        android:icon="@drawable/ic_bollywood"
+        android:iconTint="@color/white"
+        android:menuCategory="secondary"
+        android:title="@string/str_bollywood" />
+
+
+    <item
+        android:id="@+id/navigation_south_movie"
+        android:icon="@drawable/ic_south_movie"
+        android:menuCategory="secondary"
+        android:title="@string/str_south" />
+
+
+    <item
+        android:id="@+id/navigation_we_series"
+        android:icon="@drawable/ic_web_series"
+        android:iconTint="@color/white"
+        android:menuCategory="secondary"
+        android:title="@string/str_web_series" />
+
+
+</menu>

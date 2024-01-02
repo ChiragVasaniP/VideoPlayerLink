@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Dull TV</string>
+    <string name="str_trending">Trending</string>
+    <string name="str_hollywood">Hollywood</string>
+    <string name="str_bollywood">Bollywood</string>
+    <string name="str_south">South</string>
+    <string name="str_web_series">Web Series</string>
+    <string name="movie_rating">5.9</string>
+    <string name="str_loading">Loading....</string>
+    <string name="str_south_movie">South Movies</string>
+    <string name="str_bollywood_movie">Bollywood</string>
+    <string name="str_hollywood_movie">Hollywood</string>
+    <string name="str_top_trending">Top Trending</string>
+    <string name="str_alert">Alert</string>
+    <string name="str_server_error">Oops, Something went wrong, please try again later</string>
+    <string name="str_ok">Okay</string>
+    <string name="str_no_internet_connection_found_please_connect_to_internet_first">No Internet Connection Found !!! Please Connect To Internet First</string>
+    <string name="str_refresh">Refresh</string>
+    <string name="image">image</string>
+    <string name="str_movie_name">Movie Name</string>
+    <string name="movie_original_label">Movie</string>
+    <string name="genre">Genre</string>
+    <string name="str_screen_shot">ScreenShot</string>
+    <string name="str_10_22_55">Episod</string>
+    <string name="str_language">language</string>
+    <string name="_480">480</string>
+    <string name="str_play">Play</string>
+    <string name="str_episode">Episode</string>
+    <string name="str_more_trending">More Trending</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="str_install">Install</string>
+    <string name="str_do_it_later">Do it later</string>
+    <string name="title_activity_search_web_series">SearchWebSeriesActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
